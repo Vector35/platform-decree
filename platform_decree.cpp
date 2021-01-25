@@ -35,6 +35,8 @@ public:
 
 extern "C"
 {
+	BN_DECLARE_CORE_ABI_VERSION
+
 #ifndef DEMO_VERSION
 	BINARYNINJAPLUGIN void CorePluginDependencies()
 	{
