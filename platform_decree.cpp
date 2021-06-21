@@ -4,10 +4,10 @@ using namespace BinaryNinja;
 using namespace std;
 
 
-class DecreeX86Platform: public Platform
+class DecreeX86Platform : public Platform
 {
-public:
-	DecreeX86Platform(Architecture* arch): Platform(arch, "decree-x86")
+ public:
+	DecreeX86Platform(Architecture* arch) : Platform(arch, "decree-x86")
 	{
 		Ref<CallingConvention> cc;
 
@@ -38,10 +38,7 @@ extern "C"
 	BN_DECLARE_CORE_ABI_VERSION
 
 #ifndef DEMO_VERSION
-	BINARYNINJAPLUGIN void CorePluginDependencies()
-	{
-		AddOptionalPluginDependency("arch_x86");
-	}
+	BINARYNINJAPLUGIN void CorePluginDependencies() { AddOptionalPluginDependency("arch_x86"); }
 #endif
 
 #ifdef DEMO_VERSION
