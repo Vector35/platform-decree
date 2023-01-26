@@ -41,6 +41,7 @@ extern "C"
 	BINARYNINJAPLUGIN void CorePluginDependencies()
 	{
 		AddOptionalPluginDependency("arch_x86");
+		AddOptionalPluginDependency("view_elf");
 	}
 #endif
 
